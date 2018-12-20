@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>红包页面</title>
+    <link rel="stylesheet" th:href="@{/static/css/css2.css}"/>
+</head>
+
+<body>
+<a id="aa"></a>
+<div class="top">
+    <div class="topLogo"><a href="/index"><img th:src="@{static/images/Logo1.png}" width="165" height="75" alt=""/></a></div>
+    <div class="topMain">
+        <table width="100%" height="100%" border="0">
+            <tr>
+                <td id="td1" width="25%" align="center"><a th:href="@{/areaLogin}">首页</a></td>
+                <td id="td2" width="25%" align="center" valign="middle"><a th:href="@{/recentlyMonth}">我的订单</a></td>
+                <td id="td3" width="25%" align="center"><a>加盟合作</a></td>
+                <td id="td4" width="25%" align="center"><a th:href="@{/kefu}">我的客服</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="topRight">
+        <table width="100%" height="38" border="0">
+            <tr>
+                <td width="50%" align="center" valign="middle"><span id="topspan1">规则中心</span></td>
+                <td width="50%" align="center" valign="middle"><img id="phone" th:src="@{static/images/Phone1.png}" width="30" height="40"/> <span id="topspan2" onMouseOver="javascript:showInform();">手机应用</span></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<header>
+    <div id="headbottom"> <a href="/areaLogin">首页/</a><a href="/kefu">客服/</a><a href="#">公告详情</a> </div>
+    <div id="headzhu">
+        <p>只要红包用得好，再贵的餐我也买的了！</p>
+        <span class="fabu">发布者 : 只要红包用得好，再贵的餐我也买的了！ 2018-11-27 07:12:24</span>
+        <hr>
+        <a class="a1">相信每个小伙伴在下单的时候都会使用红包，上次给大家介绍了怎样下单更优惠，里面很重要的一项就是要有一个大额红包！其实我们的红包也有很多学问呢，只要红包用得好，再贵的餐咱们也买的了！<br>
+        </a> <a class="a2">今天小e就为大家整理了一些关于红包的问题，也是大家比较关心的问题，比如为什么别人有红包自己没有啦、红包使用条件是什么啦、订单取消红包没有返还啦、新用户优惠没办法享受啦...不要着急，你想看的这里都有~</a>
+        <p class="ruhe">1.怎样获取红包？<br>
+            没有红包，连下单的欲望都没有了，不知道小伙伴们有木有同感，小e通过多年定外卖的经验，发现获取红包有以下五种途径：<br>
+            1）邀请好友可获得现金红包；<br>
+            2）微信好友分享下单红包，抢拼手气红包，最高可获得10元大红包哦；<br>
+            3）微信小程序【饿了么外卖服务】-【发现】-【每日签到】每天签到就有机会获得红包；<br>
+            4）系统随机发放天降红包（天降红包系统随机发放给用户，如果今天没有收到，明天再试试哦~）；<br>
+            5）其他平台活动获得红包。</p>
+        <p class="yong">2.红包有了，我怎么用不了呢？<br>
+            有了红包但是用不了，简直是灭绝人性啊喂！在这里小e要说明一下，不是红包用不了，而是大家没有好好审题啊！<br>
+            1）饿了么红包分很多种，常见的红包种类有：品质联盟红包，果蔬商超，果蔬生鲜，商超便利，帮买帮送，超级会员等等等等，是不是有点儿懵？没关系，小e告诉你怎么用！<br>
+            2）红包区别和使用规则：红包区分店铺红包和平台红包，店铺红包一般要求在指定店铺/指定活动专区使用，红包界面可以看到红包限制使用条件，有效期，限制专区，订单金额等等，大家点击红包后面的"去使用"就会直接跳转<br>
+            到相应条件下的红包使用专区哦~具体如下图：</p>
+        <img class="img1" th:src="@{static/images/4f18df6e71360704fe9915cc3e9f7png.png}" width="360px" height="450px"/><br>
+        <img class="img1" th:src="@{static/images/948d31af18948f6b254ecde52c378png.png}" width="360px" height="480px"/>
+        <p class="a3"> 3.咦，刚刚获得的红包怎么木有了?<br>
+            其实大多数红包不见了是因为获取红包的时候和找红包的时候出现了问题；<br>
+            获取红包一般会在手机号码绑定的饿了么账户中，所以获取红包的时候尤其要注意填写的手机号码，很多用户填写错误一位数，就会导致红包不见了，下次获取红包的时候填写正确手机号码即可。<br>
+            还有一些情况也会导致"红包找不到"：<br>
+            1）获取的可能是店铺红包，用户在获取红包的时候，只能看到是红包，打开客户端优惠界面，点开店铺红包就出现了；<br>
+            2）红包失效，过期，已使用，下单分享红包如果原订单取消，那么该订单分享出来的红包就统统无效了，这些红包可以在历史红包中查看。如下图：<br>
+        </p>
+        <img class="img1" th:src="@{static/images/4cbd0df1b191ee0c61e723fcf01b6png.png}" width="360px" height="480px"/>
+        <p class="a4"> 4.订单取消后红包怎么不退回？<br>
+            正常订单取消后红包是会及时返还到账户的，下次下单时仍然可以使用，但是总是避免不了会出现网络延迟，最迟30分钟内一定会到账的（如订单异常取消及红包已经过期是不会返还的哦~）<br>
+            5.新用户红包<br>
+            新用户优惠讲究的主要就是"新"：<br>
+            1)新用户红包只有平台的新用户才可以使用，新用户条件即收餐手机号码、下单使用设备、饿了么账户均需是首次使用饿了么下单<br>
+            2)新用户优惠不得与其他活动同享，默认选择最大优惠，如您需要使用新用户红包，可手动修改；<br>
+            3)在饿了么合作平台（淘宝、支付宝等）有下过订单无法使用新用户优惠及新用户红包;<br>
+            4)红包限制在领取的城市下单使用。<br>
+            5)请核实以上条件，若有其中一项不符合则无法使用红包。<br>
+            <br>
+            好啦，关于红包的问题咱们就聊到这里啦，相信大家对红包有了更直观的认识，希望大家以后在抢红包的时候都能抢到最大包哦！</p>
+    </div>
+</header>
+</body>
+</html>

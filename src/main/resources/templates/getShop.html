@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>一个月之前</title>
+<link th:href="@{/static/css/getShop.css}" rel="stylesheet"/>
+</head>
+
+<body>
+<div id="header">
+  <ul>
+    <span><img th:src="@{/static/images/Logo1.png}" width="136" height="60"/></span>
+    <li><a th:href="@{/areaLogin}">首页</a></li>
+    <li><a th:href="@{/recentlyMonth}">我的订单</a></li>
+    <li><a href="#">加盟合作</a></li>
+    <li><a th:href="@{/kefu}">我的客服</a></li>
+    <li><a href="#">规则中心</a></li>
+    <li><img th:src="@{/static/images/Phone1.png}" /><a href="#">手机应用</a></li>
+    <li><img th:src="@{/static/images/People1.png}" /><a th:href="@{/login}">登录</a>/<a th:href="@{/addUser}">注册</a></li>
+  </ul>
+</div>
+
+<div class="all">
+  <div class="left">
+    <ul>
+      <li class="nav"><a href="">个人中心</a></li>
+      <li class="nav-header">饿单中心</li>
+      <li class="nav-center"><a th:href="@{/recentlyMonth}">最近一个月</a></li>
+      <li class="nav-center"><a th:href="@{/getShop}">一个月之前</a></li>
+      <li class="nav-center"><a th:href="@{/nopingjia}">未点评饿单</a></li>
+      <li class="nav-center"><a th:href="@{/tuidan}">退单中饿单</a></li>
+      <li class="nav-header">我的收藏</li>
+      <li class="nav-center"><a th:href="@{/canting}">我收藏的餐厅</a></li>
+      <li class="nav-center"><a th:href="@{/meishi}">我收藏的美食</a></li>
+      <li class="nav-header">账户相关</li>
+      <li class="nav-center"><a href="">我的地址</a></li>
+      <li class="nav-center"><a href="">我的红包</a></li>
+      <li class="nav-center"><a href="">邀请好友</a></li>
+      <li class="nav-header">安全中心</li>
+      <li class="nav-center"><a href="">修改密码</a></li>
+      <li class="nav-center"><a href="">安全设置</a></li>
+      <li class="nav-header">在线支付</li>
+      <li class="nav-center"><a href="">收支明细</a></li>
+    </ul>
+  </div>
+  <div class="right">
+    <div class="right-top">
+      <h3>一个月之前的饿单-共1张</h3>
+      <div class="right-top-right"> <span class="question"><a th:href="@{/kefu}">热门问题</a></span> <span class="see"><a href="">随时关注饿单状态</a></span> <span class="who"><a href="">谁去拿外卖</a></span> </div>
+    </div>
+    <div class="right-center-one">
+      <div class="right-center-one-top"> <span class="right-center-nav">交易已完成@<a href="">士百士汉堡</a></span> <span class="contain"><a href="">再来一份</a></span>
+        <div class="table">
+          <table>
+            <tr>
+              <td class="col1"><span class="item-name">饿单号：</span> 1265901226956750714</td>
+              <td class="col2"><span class="item-name">下单时间：</span><span class="om_time" data-time="2018-10-03 14:58:00">2018-10-03 14:58</span></td>
+              <td class="col3"><span class="item-name"><br/>
+                餐厅电话：</span>52040702 13917402350 13917402350</td>
+            </tr>
+            <tr>
+              <td class="col1"><span class="item-name"><br/>
+                饿单地址：</span> 山西管理职业学院 1号楼</td>
+              <td class="col2"><span class="item-name">联系电话：</span>18005151538</td>
+              <td class="col3"><span class="item-name">饿单备注：</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="right-center-one-center"> <span class="center-left">点评送餐速度：<br/>
+        您对餐厅的服务是否满意：</span> <span class="center-right">距离下单已经超过一周，请下次收到美食后尽快点评<br/>
+        距离下单已经超过一周，系统默认为好评</span> </div>
+      <div class="right-center-one-under">
+        <table class="order">
+          <tr>
+            <th class="under-name">美食篮子</th>
+            <th class="under-rating"></th>
+            <th class="under-price">单价</th>
+            <th class="under-quantity">数量</th>
+            <th class="under-total">小计</th>
+          </tr>
+          <tr>
+            <td class="under-name"><span>牛肉饭</span></td>
+            <td class="under-rating">过期不能点评 </td>
+            <td class="under-price">￥16</td>
+            <td class="under-quantity">1</td>
+            <td class="under-total">￥16</td>
+          </tr>
+          <tr>
+            <td class="under-name"><span>照烤鸡腿堡+薯条+鸡翅+鸡柳</span></td>
+            <td class="under-rating">过期不能点评 </td>
+            <td class="under-price">￥20</td>
+            <td class="under-quantity">1</td>
+            <td class="under-total">￥20</td>
+          </tr>
+        </table>
+        <table class="order">
+          <tr>
+            <th class="under-name">其他费用</th>
+            <th class="under-rating"></th>
+            <th class="under-price">单价</th>
+            <th class="under-quantity">数量</th>
+            <th class="under-total">小计</th>
+          </tr>
+          <tr>
+            <td class="under-name"> 餐盒费 </td>
+            <td class="under-rating"></td>
+            <td class="under-price">￥1</td>
+            <td class="under-quantity">1</td>
+            <td class="under-total">￥1</td>
+          </tr>
+        </table>
+        <table class="order">
+          <tr>
+            <td class="under-name">合计</td>
+            <td class="under-rating"></td>
+            <td class="under-price"></td>
+            <td class="under-quantity">2</td>
+            <td class="under-total ">￥37 </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    
+    <div class="right-center-one">
+    <div class="right-center-one-top"> <span class="right-center-nav">无效订单@<a href="">百变和田寿司</a></span>
+      <div class="table">
+        <table>
+          <tr>
+            <td class="col1"><span class="item-name">饿单号：</span>  194292357711538 </td>
+            <td class="col2"><span class="item-name">下单时间：</span><span class="om_time" data-time="2018-9-23 9:39">2018-9-23 9:39</span></td>
+            <td class="col3"><span class="item-name"><br/>
+              餐厅电话：</span>61061313 13798025005</td>
+          </tr>
+          <tr>
+            <td class="col1"><span class="item-name"><br/>
+              饿单地址：</span> 山西管理职业学院 4号楼</td>
+            <td class="col2"><span class="item-name">联系电话：</span>18252022121,025-72312112</td>
+            <td class="col3"><span class="item-name">饿单备注：</span>不吃辣</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="right-center-one-center"> <span class="center-left">点评送餐速度：<br/>
+      您对餐厅的服务是否满意：</span> <span class="center-right">当前状态下不能点评<br/>
+      当前状态下不能点评</span> </div>
+    <div class="right-center-one-under">
+      <table class="order">
+        <tr>
+          <th class="under-name">美食篮子</th>
+          <th class="under-rating"></th>
+          <th class="under-price">单价</th>
+          <th class="under-quantity">数量</th>
+          <th class="under-total">小计</th>
+        </tr>
+        <tr>
+          <td class="under-name"><span>玉米沙律寿司(个)</span></td>
+          <td class="under-rating">该状态下不能点评 </td>
+          <td class="under-price">￥4</td>
+          <td class="under-quantity">2</td>
+          <td class="under-total">￥8</td>
+        </tr>
+        <tr>
+          <td class="under-name"><span>玉子寿司（个）</span></td>
+          <td class="under-rating">	该状态下不能点评</td>
+          <td class="under-price">￥1</td>
+          <td class="under-quantity">9</td>
+          <td class="under-total">￥9</td>
+        </tr>
+        <tr>
+          <td class="under-name"><span>海草寿司(个)</span></td>
+          <td class="under-rating">	该状态下不能点评</td>
+          <td class="under-price">￥3</td>
+          <td class="under-quantity">1</td>
+          <td class="under-total">￥3</td>
+        </tr>
+        <tr>
+          <td class="under-name"><span>肉松寿司（个）</span></td>
+          <td class="under-rating">	该状态下不能点评</td>
+          <td class="under-price">￥2</td>
+          <td class="under-quantity">1</td>
+          <td class="under-total">￥2</td>
+        </tr>
+      </table>
+      <table class="order">
+        <tr>
+          <th class="under-name">其他费用</th>
+          <th class="under-rating"></th>
+          <th class="under-price">单价</th>
+          <th class="under-quantity">数量</th>
+          <th class="under-total">小计</th>
+        </tr>
+        <tr>
+          <td class="under-name"> 餐盒费 </td>
+          <td class="under-rating"></td>
+          <td class="under-price">￥5</td>
+          <td class="under-quantity">5</td>
+          <td class="under-total">￥5</td>
+        </tr>
+      </table>
+      <table class="order">
+        <tr>
+          <td class="under-name">合计</td>
+          <td class="under-rating"></td>
+          <td class="under-price"></td>
+          <td class="under-quantity">13</td>
+          <td class="under-total ">￥22 </td>
+        </tr>
+      </table>
+    </div>  
+    </div>
+<div class="right-center-one">
+    <div class="right-center-one-top"> <span class="right-center-nav">交易已完成@<a href="">多米居便当</a></span> <span class="contain"><a href="">再来一份</a></span>
+      <div class="table">
+        <table>
+          <tr>
+            <td class="col1"><span class="item-name">饿单号：</span> 12358330119834450</td>
+            <td class="col2"><span class="item-name">下单时间：</span><span class="om_time" data-time="2018-8-29 18:39">2018-8-29 18:39</span></td>
+            <td class="col3"><span class="item-name"><br/>
+              餐厅电话：</span>021-24214574 13046688561 13046688561</td>
+          </tr>
+          <tr>
+            <td class="col1"><span class="item-name"><br/>
+              饿单地址：</span> 山西管理职业学院 2号楼</td>
+            <td class="col2"><span class="item-name">联系电话：</span>17803576590</td>
+            <td class="col3"><span class="item-name">饿单备注：</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="right-center-one-center"> <span class="center-left">点评送餐速度：<br/>
+      您对餐厅的服务是否满意：</span> <span class="center-right">距离下单已经超过一周，请下次收到美食后尽快点评<br/>
+      距离下单已经超过一周，系统默认为好评</span> </div>
+    <div class="right-center-one-under">
+      <table class="order">
+        <tr>
+          <th class="under-name">美食篮子</th>
+          <th class="under-rating"></th>
+          <th class="under-price">单价</th>
+          <th class="under-quantity">数量</th>
+          <th class="under-total">小计</th>
+        </tr>
+        <tr>
+          <td class="under-name"><span>土豆牛肉饭</span></td>
+          <td class="under-rating">差点意思 </td>
+          <td class="under-price">￥15</td>
+          <td class="under-quantity">1</td>
+          <td class="under-total">￥15</td>
+        </tr>
+        <tr>
+          <td class="under-name"><span>农家小炒肉饭</span></td>
+          <td class="under-rating">差点意思 </td>
+          <td class="under-price">￥14</td>
+          <td class="under-quantity">1</td>
+          <td class="under-total">￥14</td>
+        </tr>
+        <tr>
+          <td class="under-name"><span>黑胡椒牛排饭</span></td>
+          <td class="under-rating">差评 </td>
+          <td class="under-price">￥20</td>
+          <td class="under-quantity">1</td>
+          <td class="under-total">￥20</td>
+        </tr>
+        <tr>
+          <td class="under-name"><span>剁椒鸡腿肉饭</span></td>
+          <td class="under-rating">差点意思 </td>
+          <td class="under-price">￥23</td>
+          <td class="under-quantity">1</td>
+          <td class="under-total">￥23</td>
+        </tr>
+      </table>
+      <table class="order">
+        <tr>
+          <th class="under-name">其他费用</th>
+          <th class="under-rating"></th>
+          <th class="under-price">单价</th>
+          <th class="under-quantity">数量</th>
+          <th class="under-total">小计</th>
+        </tr>
+        <tr>
+          <td class="under-name"> 餐盒费 </td>
+          <td class="under-rating"></td>
+          <td class="under-price">￥5</td>
+          <td class="under-quantity">5</td>
+          <td class="under-total">￥5</td>
+        </tr>
+      </table>
+      <table class="order">
+        <tr>
+          <td class="under-name">合计</td>
+          <td class="under-rating"></td>
+          <td class="under-price"></td>
+          <td class="under-quantity">4</td>
+          <td class="under-total ">￥77 </td>
+        </tr>
+      </table>
+    </div>  
+</div>
+<div class="right-center-one">
+    <div class="right-center-one-top"> <span class="right-center-nav">交易已完成@<a href="">川湘缘快餐</a></span> <span class="contain"><a href="">再来一份</a></span>
+      <div class="table">
+        <table>
+          <tr>
+            <td class="col1"><span class="item-name">饿单号：</span> 231542736732114 </td>
+            <td class="col2"><span class="item-name">下单时间：</span><span class="om_time" data-time="2018-8-12 12:39">2018-8-12 12:39</span></td>
+            <td class="col3"><span class="item-name"><br/>
+              餐厅电话：</span>13311528306 13311506372 13311528306</td>
+          </tr>
+          <tr>
+            <td class="col1"><span class="item-name"><br/>
+              饿单地址：</span> 山西管理职业学院 3号楼</td>
+            <td class="col2"><span class="item-name">联系电话：</span>17803572583</td>
+            <td class="col3"><span class="item-name">饿单备注：</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="right-center-one-center"> <span class="center-left">点评送餐速度：<br/>
+      您对餐厅的服务是否满意：</span> <span class="center-right">距离下单已经超过一周，请下次收到美食后尽快点评<br/>
+      距离下单已经超过一周，系统默认为好评</span> </div>
+    <div class="right-center-one-under">
+      <table class="order">
+        <tr>
+          <th class="under-name">美食篮子</th>
+          <th class="under-rating"></th>
+          <th class="under-price">单价</th>
+          <th class="under-quantity">数量</th>
+          <th class="under-total">小计</th>
+        </tr>
+        <tr>
+          <td class="under-name"><span>红烧豆腐盖饭</span></td>
+          <td class="under-rating">过期不能点评 </td>
+          <td class="under-price">￥8</td>
+          <td class="under-quantity">1</td>
+          <td class="under-total">￥8</td>
+        </tr>
+        <tr>
+          <td class="under-name"><span>西红柿鸡蛋面</span></td>
+          <td class="under-rating">	过期不能点评</td>
+          <td class="under-price">￥14</td>
+          <td class="under-quantity">1</td>
+          <td class="under-total">￥14</td>
+        </tr>
+        <tr>
+          <td class="under-name"><span>炝炒油麦菜盖饭</span></td>
+          <td class="under-rating">	过期不能点评</td>
+          <td class="under-price">￥10</td>
+          <td class="under-quantity">1</td>
+          <td class="under-total">￥10</td>
+        </tr>
+        <tr>
+          <td class="under-name"><span>酸菜粉丝盖饭</span></td>
+          <td class="under-rating">	过期不能点评</td>
+          <td class="under-price">￥13</td>
+          <td class="under-quantity">1</td>
+          <td class="under-total">￥13</td>
+        </tr>
+      </table>
+      <table class="order">
+        <tr>
+          <th class="under-name">其他费用</th>
+          <th class="under-rating"></th>
+          <th class="under-price">单价</th>
+          <th class="under-quantity">数量</th>
+          <th class="under-total">小计</th>
+        </tr>
+        <tr>
+          <td class="under-name"> 餐盒费 </td>
+          <td class="under-rating"></td>
+          <td class="under-price">￥5</td>
+          <td class="under-quantity">5</td>
+          <td class="under-total">￥5</td>
+        </tr>
+      </table>
+      <table class="order">
+        <tr>
+          <td class="under-name">合计</td>
+          <td class="under-rating"></td>
+          <td class="under-price"></td>
+          <td class="under-quantity">4</td>
+          <td class="under-total ">￥45 </td>
+        </tr>
+      </table>
+    </div>  
+    </div>
+    <div class="beijing"><img th:src="@{/static/images/allPhoto.png}" width="100%" height="100%"> </div>
+  </div></div>
+</div>
+<!--尾部-->
+<div id="footer">
+  <div class="footer-bottom">
+    <ul>
+      <li><a href="#">我要开店</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">联系我们</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">服务条款与协议</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">隐私条款</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">营业执照</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">加入我们</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">蜂鸟配送</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">失信人员查询</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">互联网药品信息服务资格证书:(沪)-经营性-2016-0011 </a>&nbsp;&nbsp;|</li>
+      <li><a href="#">增值电信业务许可证 : 沪B2-20150033</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">沪ICP备 09007032</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">上海工商行政管理 Copyright ©2008-2018 上海拉扎斯信息科技有限公司, All Rights Reserved.</a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,140 @@
+* {
+	mrgin: 0px;
+	padding: 0px;
+}
+body {
+	background-color:#F3F3F5;
+}
+.top {
+	background-color: #0088ff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 10%;
+}
+.topLogo {
+	position: absolute;
+	left: 65px;
+	top: 0px;
+}
+.topMain {
+	position: absolute;
+	left: 267px;
+	top: 0px;
+	width: 450px;
+	height: 100%;
+	color: white;
+	font-weight: 500;
+}
+#td1 {
+	background-color: #0073D8
+}
+#td2:hover {
+	background-color: #0073D8
+}
+#td3:hover {
+	background-color: #0073D8
+}
+#td4:hover {
+	background-color: #0073D8
+}
+.topRight {
+	position: absolute;
+	left: 1550px;
+	top: 15px;
+}
+.topRight {
+	color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	font-weight: 300;
+	width: 243px;
+	height: 42px;
+}
+#topspan1:hover {
+	color: rgba(255, 255, 255, 1.00)
+}
+#phone {
+	vertical-align: middle
+}
+.panel {
+ #display: none;
+	background-color: white;
+	border: thick rgba(0, 0, 0, 1.00);
+}
+header #headbottom {
+	margin-left:50px;
+	margin-top:130px;
+}
+header #headbottom a {
+	font-size:15px;
+	color:#999;
+	text-decoration:none;
+}
+header #headbottom a:hover {
+	color:#00F;
+}
+header #headzhu {
+	width:1500px;
+	height:100%;
+	background-color:#FFF;
+	margin-left:150px;
+}
+header #headzhu p {
+	color:#333;
+	font-size:18px;
+	padding-top:40px;
+	padding-left:37px;
+}
+header #headzhu .fabu {
+	font-size:10px;
+	color:#999;
+	padding-left:37px;
+}
+header hr {
+	width:1335px;
+	padding-left:90px;
+	color:#CCC;
+}
+header #headzhu .a1 {
+	font-size:14px;
+	color:#666;
+	padding-left:37px;
+	padding-top:15px;
+}
+header #headzhu .a2 {
+	font-size:14px;
+	color:#666;
+	padding-left:37px;
+	padding-top:15px;
+}
+header #headzhu .ruhe {
+	font-size:14px;
+	color:#666;
+	padding-left:37px;
+	padding-top:15px;
+	line-height:25px;
+}
+header #headzhu .yong {
+	font-size:14px;
+	color:#666;
+	padding-left:37px;
+	padding-top:15px;
+	line-height:25px;
+}
+header #headzhu .img1 {
+	padding-left:40px;
+}
+header #headzhu .a3 {
+	font-size:14px;
+	color:#666;
+	padding-left:37px;
+	padding-top:15px;
+}
+header #headzhu .a4 {
+	font-size:14px;
+	color:#666;
+	padding-left:37px;
+	padding-top:15px;
+	padding-bottom:70px;
+}

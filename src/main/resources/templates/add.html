@@ -1,0 +1,158 @@
+<!doctype html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>注册</title>
+  <style type="text/css">
+  * {
+  margin: 0px;
+  padding: 0px;
+  }
+  #all {
+  width: 100%;
+  }
+  .top {
+  width: 100%;
+  clear: right;
+  }
+  .topimg {
+  margin-top: 15px;
+  margin-left: 300px;
+  }
+  .cenLeft {
+  float: left;
+  margin-left: 300px;
+  margin-top: 20px;
+  margin-right: 50px;
+  }
+  .cenRight {
+  position: absolute;
+  left: 860px;
+  top: 140px;
+  width: 325px;
+  height: 381px;
+  background-color: #E0E0E0;
+  border: rgba(96,96,96,1.00) 1px solid;
+  }
+  .cenRight a {
+  color: rgba(47,174,255,0.7);
+  font-size: 10px;
+  text-decoration: none;
+  }
+  .cenRight a:hover {
+  color: rgba(47,174,255,1.0);
+  text-decoration: underline;
+  }
+  .login {
+  font-size: 24px;
+  font-weight: bolder;
+  }
+  .ph img {
+  text-align: center;
+  }
+  .btn {
+  width: 300px;
+  height: 50px;
+  background: rgba(27,136,235,1.00);
+  }
+  .user {
+  width: 280px;
+  height: 50px;
+  border-radius: 3px;
+  }
+  .pwd {
+  width: 280px;
+  height: 50px;
+  border-radius: 3px;
+  }
+  #footer {
+  width: 1366px;
+  height: 239px;
+  margin: 0px auto;
+  box-sizing: border-box;
+  position: absolute;
+  left: 97px;
+  top: 635px;
+  }
+  #footer .footer-top {
+  width: 1366px;
+  height: 310px;
+  margin: 0px auto;
+  box-sizing: border-box;
+  float: left;
+  }
+  .footer-bottom ul {
+  text-align: center;
+  }
+  #footer li {
+  display: inline-block;
+  color: #666666;
+  }
+  #footer li a {
+  font-size: 12px;
+  color: #666666;
+  }
+  #footer li a:hover {
+  color: #F03;
+  text-decoration: underline;
+  }
+  </style>
+</head>
+
+<body id="all">
+<div class="top">
+  <div class="topimg"> <a href="https://www.ele.me"><img th:src="@{/static/images/LoginLogo.png}" width="338" height="75"/></a> </div>
+</div>
+<!--中部-->
+<div class="center">
+  <div class="cenLeft"><img th:src="@{/static/images/banner-app.75596728.png}" width="445" height="382"></div>
+  <div class="cenRight">
+    <form method="post" action="/doAdd" >
+      <table width="100%" height="381" border="0">
+        <tbody>
+          <tr>
+            <td height="62" align="center"><span class="login">注册</span></td>
+          </tr>
+          <tr>
+            <td height="56" align="center"><input class="user" name="userName" type="text" id="userName" placeholder="用户名"></td>
+          </tr>
+          <tr>
+            <td height="52" align="center"><input class="user" name="email" type="text" id="email" placeholder="电子邮箱" required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" ></td>
+          </tr>
+          <tr>
+            <td height="57" align="center"><input class="pwd" name="userPwd" type="password" id="userPwd" placeholder="密码"></td>
+          </tr>
+          <tr>
+			 <td height="57" align="center"><a class="xieyi" href="#">《使用条款和协议》</a></td>
+          </tr>
+          <tr>
+            <td align="center"><input class="btn" type="submit" id="submit" value="同意协议并注册"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+</div>
+<!--尾部-->
+<div id="footer">
+  <div class="footer-bottom">
+    <ul>
+      <li><a href="#">我要开店</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">联系我们</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">服务条款与协议</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">隐私条款</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">营业执照</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">加入我们</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">蜂鸟配送</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">失信人员查询</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">互联网药品信息服务资格证书:(沪)-经营性-2016-0011 </a>&nbsp;&nbsp;|</li>
+      <li><a href="#">增值电信业务许可证 : 沪B2-20150033</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">沪ICP备 09007032</a>&nbsp;&nbsp;|</li>
+      <li><a href="#">上海工商行政管理 Copyright ©2008-2018 上海拉扎斯信息科技有限公司, All Rights Reserved.</a></li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

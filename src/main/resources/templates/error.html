@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>页面找不到了.....</title>
+    <style type="text/css">
+        * {margin:0px; padding:0px;}
+        body{width:100%; height:auto; margin:0px auto; background:#FAF9F5; position:relative;}
+        div{width:100px; height:50px; line-height:50px; text-align:center; font-size:16px; border-radius:2px; background-color:#615A4F;}
+
+        body img{ float:left; margin:20px 300px; }
+        div a{color:#FFF; text-decoration:none;}
+
+        .div1{position:absolute; top:450px; left:450px;}
+        .div2{position:absolute; top:450px; left:750px;}
+    </style>
+</head>
+
+<body>
+<img th:src="@{/static/images/yichang.png}"/>
+<div class="div1"><a th:href="@{/error}">再次刷新</a></div>
+<div class="div2"><a th:href="@{/areaLogin}">返回首页</a></div>
+</body>
+</html>

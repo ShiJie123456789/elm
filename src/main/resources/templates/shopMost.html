@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>饿了么？回来点单哦！</title>
+    <link rel="stylesheet" th:href="@{/static/css/most.css}" />
+</head>
+
+<body>
+<div id="all">
+    <div id="header-bg">
+        <div id="header">
+            <div id="header-top">
+                <ul class="left">
+                    <a th:href="@{/areaLogin}"><img th:src="@{static/images/logo1.png}"></a>
+                    <li><a th:href="@{/areaLogin}">首页</a></li>
+                    <li><a th:href="@{/recentlyMonth}">我的订单</a></li>
+                    <li><a href="#">加盟合作</a></li>
+                    <li><a th:href="@{/kefu}">我的客服</a></li>
+                    <li id="guize">
+                        <span><a href="#">规则中心</a></span>
+                        <span id="phone"><a href="#">手机应用</a></span>
+                    </li>
+                </ul>
+                <ul class="right">
+                    <li><a th:href="@{/login}">登录</a>&nbsp;/&nbsp;<a th:href="@{/addUser}">注册</a></li>
+                </ul>
+            </div>
+            <div id="header-zhong">
+                <table width="1200" height="140">
+                    <tr>
+                        <td width="157" rowspan="2" align="right">
+                            <img th:src="@{/static/images/xiaobao.png}" width="140" height="140"/>
+                        </td>
+                        <td width="584" height="70" class="indent" th:text="${shopName}"></td>
+                        <td width="171" align="center">起送价</td>
+                        <td width="175" align="center">配送费</td>
+                        <td width="200" align="center">平均送达速度</td>
+                    </tr>
+                    <tr>
+                        <td height="70" valign="top" class="xiaoliang">月售3000+份</td>
+                        <td align="center" valign="top">20元</td>
+                        <td align="center" valign="top">远距离配送费¥20</td>
+                        <td align="center" valign="top">26分钟</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="header-bottom">
+                <ul class="left">
+                    <li><a href="#">所有商品</a></li><span>|</span>
+                    <li><a href="#">评价</a></li><span>|</span>
+                    <li><a href="#">商家资质</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="#">默认排序</a></li><span>|</span>
+                    <li><a href="#">评分</a></li><span>|</span>
+                    <li><a href="#">销量</a></li><span>|</span>
+                    <li><a href="#">价格</a></li>
+                </ul>
+
+                <input name="sousuo" type="text" placeholder="搜索商家，美食..."/>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="zhong">
+        <div id="zhong-left">
+            <div id="zhong-div">
+                <ul>
+                    <li><a href="#">热销&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></li>
+                    <li><a href="#">特色小吃&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></li>
+                </ul>
+            </div>
+            <h1>热销<span>大家喜欢吃，才叫真好吃。</span></h1>
+            <dl class="left">
+                <img th:src="@{/static/images/food1.png}"/>
+                <dt>恒健灌汤包</dt>
+                <p>月售60份</p>
+                <dd>￥8</dd>
+                <a href="/payment">立即下单</a>
+            </dl>
+            <dl class="right">
+                <img th:src="@{/static/images/food2.png}"/>
+                <dt>引林小笼包</dt>
+                <p>月售1204份</p>
+                <dd>￥10</dd>
+                <a th:href="@{/payment}">立即下单</a>
+            </dl>
+            <dl class="left">
+                <img th:src="@{/static/images/food3.png}"/>
+                <dt>杰哥豆浆</dt>
+                <p>月售500份</p>
+                <dd>￥3</dd>
+                <a th:href="@{/payment}">立即下单</a>
+            </dl>
+            <dl class="right">
+                <img th:src="@{/static/images/food4.png}"/>
+                <dt>松青肉包</dt>
+                <p>月售750份</p>
+                <dd>￥8</dd>
+                <a th:href="@{/payment}">立即下单</a>
+            </dl>
+            <h1>特色小吃</span></h1>
+            <dl class="left">
+                <img th:src="@{/static/images/food5.png}"/>
+                <dt>牛氏蛋花汤</dt>
+                <p>月售806份</p>
+                <dd>￥3</dd>
+                <a th:href="@{/payment}">立即下单</a>
+            </dl>
+            <dl class="right">
+                <img th:src="@{/static/images/food6.png}"/>
+                <dt>麒麟水煎包</dt>
+                <p>月售951份</p>
+                <dd>￥10</dd>
+                <a th:href="@{/payment}">立即下单</a>
+            </dl>
+            <dl class="left">
+                <img th:src="@{/static/images/food7.png}"/>
+                <dt>柴氏煎饺</dt>
+                <p>月售1627份</p>
+                <dd>￥5</dd>
+                <a th:href="@{/payment}">立即下单</a>
+            </dl>
+            <dl class="right">
+                <img th:src="@{/static/images/food8.png}"/>
+                <dt>永和豆浆</dt>
+                <p>月售409份</p>
+                <dd>￥2</dd>
+                <a th:href="@{/payment}">立即下单</a>
+            </dl>
+            <dl class="left">
+                <img th:src="@{/static/images/food1.png}"/>
+                <dt>郭氏烧麦</dt>
+                <p>月售988份</p>
+                <dd>￥15</dd>
+                <a th:href="@{/payment}">立即下单</a>
+            </dl>
+            <dl class="right">
+                <img th:src="@{/static/images/food2.png}"/>
+                <dt>天津狗不理包子</dt>
+                <p>月售1888份</p>
+                <dd>￥20</dd>
+                <a th:href="@{/payment}">立即下单</a>
+            </dl>
+            <dl class="left">
+                <img th:src="@{/static/images/food3.png}"/>
+                <dt>新鲜羊奶</dt>
+                <p>月售500份</p>
+                <dd>￥5</dd>
+                <a th:href="@{/payment}">立即下单</a>
+            </dl>
+            <dl class="right">
+                <img th:src="@{/static/images/food4.png}"/>
+                <dt>藕合菜包</dt>
+                <p>月售435份</p>
+                <dd>￥6</dd>
+                <a th:href="@{/payment}">立即下单</a>
+            </dl>
+        </div>
+
+        <div id="zhong-right">
+            <h1>商家公告</h1>
+            <dl>
+                <dt>配送说明：</dt>
+                <dd>远距离配送费¥4</dd>
+                <p>该商户食品安全已由国泰产险承担，食品安全有保障</p>
+                <a href="#">举报商家</a>
+            </dl>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <div class="footer-top"> <img th:src="@{/static/images/7.png}"/> </div>
+        <div class="footer-bottom">
+            <ul>
+                <li><a href="#">我要开店</a>&nbsp;&nbsp;|</li>
+                <li><a href="#">联系我们</a>&nbsp;&nbsp;|</li>
+                <li><a href="#">服务条款与协议</a>&nbsp;&nbsp;|</li>
+                <li><a href="#">隐私条款</a>&nbsp;&nbsp;|</li>
+                <li><a href="#">营业执照</a>&nbsp;&nbsp;|</li>
+                <li><a href="#">加入我们</a>&nbsp;&nbsp;|</li>
+                <li><a href="#">蜂鸟配送</a>&nbsp;&nbsp;|</li>
+                <li><a href="#">失信人员查询</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="#">互联网药品信息服务资格证书:(沪)-经营性-2016-0011 </a>&nbsp;&nbsp;|
+                </li>
+                <li><a href="#">增值电信业务许可证 : 沪B2-20150033</a>&nbsp;&nbsp;|</li>
+                <li><a href="#">沪ICP备 09007032</a>&nbsp;&nbsp;|</li>
+                <li><a href="#">上海工商行政管理 Copyright ©2008-2018 上海拉扎斯信息科技有限公司, All Rights Reserved.</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</div>
+
+</body>
+</html>
